@@ -3,6 +3,8 @@ package employeeApp;
 public class Employee
 {
     //fields - things that the class knows
+    private static int maxId = 0;
+    
     private int id;
     private String fname; //String is a class
     private String lname;
@@ -10,6 +12,20 @@ public class Employee
     private boolean has401k
     private int companyId;
     private int healthPlanId;
+
+    //constructor - called to construct an object of this class.
+    public Employee(String fname, String lname, double salary, boolean has401k, int companyId, int healthPlanId)
+    {
+        maxId++;
+        id = maxId;
+
+        this.fname = fname;
+        this.lname = lname;
+        this.salary = salary;
+        this.has401k = has401k;
+        this.companyId = companyId;
+        this.healthPlanId = healthPlanId; 
+    }
 
     //methods - behaviors
     //Getters and Setters
@@ -24,7 +40,7 @@ public class Employee
         return fname;
     }
 
-    public void setFname(String, fname)
+    public void setFname(String fname)
     {
         this.fname = fname;
     }
@@ -62,6 +78,21 @@ public class Employee
     public int getCompanyId()
     {
         return companyId;
+    }
+
+    public void setCompanyId(int companyId)
+    {
+        this.companyId = companyId;
+    }
+
+    public int getHealthPlanId()
+    {
+        return healthPlanId;
+    }
+
+    public void setHealthPlanId(int healthPlanId)
+    {
+        this.healthPlanId = healthPlanId;
     }
 
 

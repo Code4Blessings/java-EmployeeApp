@@ -10,6 +10,7 @@ public class Main
         //Every method in java returns a datatype
         //Void means we're not returning anything
         //println is a method which is the equivalent of console.log
+        Healthplan 
     }
 
     public static void main(String[] args) 
