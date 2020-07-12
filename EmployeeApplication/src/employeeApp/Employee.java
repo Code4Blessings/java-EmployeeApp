@@ -9,7 +9,7 @@ public class Employee
     private String fname; //String is a class
     private String lname;
     private double salary;
-    private boolean has401k
+    private boolean has401k;
     private int companyId;
     private int healthPlanId;
 

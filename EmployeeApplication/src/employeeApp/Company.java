@@ -16,5 +16,11 @@ public class Company
         this.name = name;
         this.debt = debt;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Company: " + name + " debt " + 100;
+    }
 }
 
